@@ -47,7 +47,7 @@ h2 {
 .hero-info h2 {
   color: #575757;
   font-size: 1rem;
-  margin: 0.2rem 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .logo-container {
@@ -63,7 +63,7 @@ h2 {
 }
 
 .hero-info img {
-  height: 1.3rem;
+  height: 1.5rem;
 }
 
 .experience {
@@ -71,8 +71,7 @@ h2 {
   justify-content: center;
   margin: auto;
   text-align: center;
-  font-size: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 1.4rem;
   max-width: 20rem;
 }
 
@@ -83,11 +82,11 @@ h2 {
 .experience h2 {
   width: 30%;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .cta {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
