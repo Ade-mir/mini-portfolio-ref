@@ -219,13 +219,12 @@ article {
 }
 
 article p {
-  font-weight: 300;
   background-color: #eeeeee;
+  color: #575757;
   border-radius: 0.5rem;
   flex-grow: 20;
   margin: 0;
   padding: 1rem;
-  color: white;
 }
 
 footer {
@@ -233,12 +232,4 @@ footer {
   display: flex;
   justify-content: center;
   margin: 3rem 0;
-}
-
-.frontend-skills p {
-  background: linear-gradient(to right bottom, #3e78c9, #0a2546);
-}
-
-.backend-skills p {
-  background: linear-gradient(to right bottom, #3ec1c9, #0a1e46);
 }
