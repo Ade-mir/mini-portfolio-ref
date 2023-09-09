@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-pic">
+        <img
+          src="assets/mason-wilkes-TMgQMXoglsM-unsplash.jpg"
+          alt="Mason Wilkes"
+        />
+      </div>
+      <div class="hero-info">
+        <h1>Mason Wilkes</h1>
+        <h2>Frontend Developer</h2>
+        <div class="logo-container">
+          <a href="https://github.com/"
+            ><img src="assets/github_light.png" alt="github logo"
+          /></a>
+          <a href="https://linkedin.com/"
+            ><img src="assets/linkedin_light.png" alt="linkedin logo"
+          /></a>
+          <a href="mailto:abc@gmail.com"
+            ><img src="assets/email.png" alt="email logo"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section class="experience">
+      <h2><b>3</b><br />Years<br />Frontend</h2>
+      <h2><b>5</b><br />Years<br />B.Sc. & M.Sc.</h2>
+      <h2><b>4</b><br />Satisfied<br />Employers</h2>
+    </section>
+    <section class="cta">
+      <a href="assets/example-cv.pdf" download>
+        <button class="btn download-btn">Download CV</button>
+      </a>
+      <a href="mailto:abc@gmail.com"
+        ><button class="btn contact-btn">Contact Me</button></a
+      >
+    </section>
+    <section class="portfolio-skills">
+      <div class="btn-bg">
+        <button class="btn-2 active-btn" id="portfolio-btn">Portfolio</button>
+        <button class="btn-2" id="skills-btn">Skills</button>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="wrapper project-wrapper">
+        <a href="https://github.com/"
+          ><img src="assets/project-1.png" alt="Project 1"
+        /></a>
+      </div>
+      <div class="wrapper project-wrapper">
+        <a href="https://github.com/"
+          ><img src="assets/project-2.png" alt="Project 2"
+        /></a>
+      </div>
+      <div class="wrapper project-wrapper">
+        <a href="https://github.com/"
+          ><img src="assets/project-3.png" alt="Project 3"
+        /></a>
+      </div>
+      <div class="wrapper project-wrapper">
+        <a href="https://github.com/"
+          ><img src="assets/project-4.png" alt="Project 4"
+        /></a>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="wrapper">
+        <h3>Frontend</h3>
+        <article class="frontend-skills">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>SASS</p>
+          <p>LESS</p>
+          <p>JavaScript</p>
+          <p>TypeScript</p>
+          <p>React</p>
+          <p>Angular</p>
+          <p>Material UI</p>
+        </article>
+        <h3>Backend</h3>
+        <article class="backend-skills">
+          <p>Node.js</p>
+          <p>Express.js</p>
+          <p>APIs</p>
+          <p>Database CRUD</p>
+          <p>Git</p>
+          <p>GraphQL</p>
+          <p>Web Servers</p>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <p>&copy Mason Wilkes 2023</p>
+    </footer>
+  </body>
+</html>

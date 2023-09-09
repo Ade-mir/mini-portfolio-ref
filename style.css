@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  cursor: default;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+.hero-pic {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hero-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top 0.4rem right -1.3rem;
+  transform: scale(1.9);
+}
+
+.hero-info h1,
+h2 {
+  font-weight: 400;
+}
+
+.hero-info h1 {
+  margin: 0;
+}
+
+.hero-info h2 {
+  color: #575757;
+  font-size: 0.8rem;
+  margin: 0.2rem 0 1rem 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo-container img {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-info img {
+  height: 1.3rem;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  font-size: 0.5rem;
+  margin-top: 1rem;
+  max-width: 20rem;
+}
+
+.experience h2 {
+  width: 30%;
+}
+
+.cta {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn,
+.btn-2 {
+  border-radius: 0.7rem;
+  border: none;
+  font-weight: bold;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #167bce;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn-2:hover,
+.project-wrapper:hover,
+.logo-container a:hover {
+  transform: scale(0.98);
+}
+
+.btn:active,
+.btn-2:active,
+.project-wrapper:active,
+.logo-container a:active {
+  transform: scale(1);
+}
+
+.contact-btn:hover {
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-2:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn {
+  width: 9rem;
+  height: 3rem;
+}
+
+.btn-2 {
+  width: 8.5rem;
+  height: 3rem;
+}
+
+.download-btn {
+  background-color: #2196f3;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-skills {
+  height: 4rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.btn-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  height: 100%;
+  width: 20rem;
+  border-radius: 0.7rem;
+  background-color: #eeeeee;
+}
+
+.active-btn {
+  background-color: #ffffff;
+}
+
+.portfolio,
+.skills {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skills {
+  display: none;
+}
+
+.wrapper {
+  width: 20rem;
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-wrapper {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wrapper img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.wrapper img:hover {
+  cursor: pointer;
+}
+
+.wrapper h3 {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+article p {
+  font-weight: 300;
+  background-color: #eeeeee;
+  border-radius: 0.5rem;
+  flex-grow: 20;
+  margin: 0;
+  padding: 1rem;
+  color: white;
+}
+
+footer {
+  color: #575757;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.frontend-skills p {
+  background: linear-gradient(to right bottom, #3e78c9, #0a2546);
+}
+
+.backend-skills p {
+  background: linear-gradient(to right bottom, #3ec1c9, #0a1e46);
+}
+/* 
+.frontend-skills p {
+  background: linear-gradient(to right bottom, #cbcbcb, #2a5775);
+}
+
+.backend-skills p {
+  background: linear-gradient(to right bottom, #cbcbcb, #2a755a);
+} */
+
+/* .frontend-skills p {
+  color: black;
+  background: linear-gradient(to right bottom, #ffffff, #ffffff);
+}
+
+.backend-skills p {
+  color: black;
+  background: linear-gradient(to right bottom, #ffffff, #ffffff);
+}
+
+.wrapper {
+  background-color: grey;
+} */
