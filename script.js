@@ -21,7 +21,7 @@ skillsBtn.addEventListener("click", (event) => {
 // Light & Dark Theme
 document.addEventListener("DOMContentLoaded", () => {
   const toggleThemeButton = document.getElementById("toggleTheme");
-  const themeIcon = document.querySelector('img[alt="theme icon"]'); // New
+  const themeIcon = document.querySelector('img[alt="theme icon"]');
   const githubLogo = document.querySelector('img[alt="github logo"]');
   const linkedinLogo = document.querySelector('img[alt="linkedin logo"]');
   const emailLogo = document.querySelector('img[alt="email logo"]');
@@ -30,35 +30,36 @@ document.addEventListener("DOMContentLoaded", () => {
     github: "assets/github_light.png",
     linkedin: "assets/linkedin_light.png",
     email: "assets/email_light.png",
-    theme: "assets/theme_light.png", // New
+    theme: "assets/theme_light.png",
   };
 
   const darkLogos = {
     github: "assets/github_dark.png",
     linkedin: "assets/linkedin_dark.png",
     email: "assets/email_dark.png",
-    theme: "assets/theme_dark.png", // New
+    theme: "assets/theme_dark.png",
   };
 
-  const loadTheme = () => {
-    const isDark = localStorage.getItem("isDark") === "true";
-    document.body.classList.toggle("dark-theme", isDark);
-
+  function setTheme(isDark) {
     githubLogo.src = isDark ? darkLogos.github : lightLogos.github;
     linkedinLogo.src = isDark ? darkLogos.linkedin : lightLogos.linkedin;
     emailLogo.src = isDark ? darkLogos.email : lightLogos.email;
-    themeIcon.src = isDark ? darkLogos.theme : lightLogos.theme; // New
-  };
+    themeIcon.src = isDark ? darkLogos.theme : lightLogos.theme;
+  }
 
   toggleThemeButton.addEventListener("click", () => {
     const isDark = document.body.classList.toggle("dark-theme");
     localStorage.setItem("isDark", isDark);
 
-    githubLogo.src = isDark ? darkLogos.github : lightLogos.github;
-    linkedinLogo.src = isDark ? darkLogos.linkedin : lightLogos.linkedin;
-    emailLogo.src = isDark ? darkLogos.email : lightLogos.email;
-    themeIcon.src = isDark ? darkLogos.theme : lightLogos.theme; // New
+    setTheme(isDark);
   });
+
+  const loadTheme = () => {
+    const isDark = localStorage.getItem("isDark") === "true";
+    document.body.classList.toggle("dark-theme", isDark);
+
+    setTheme(isDark);
+  };
 
   // Load saved theme from local storage or default to light theme
   loadTheme();
