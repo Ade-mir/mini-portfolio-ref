@@ -46,7 +46,7 @@ h2 {
 
 .hero-info h2 {
   color: #575757;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 0.2rem 0 1rem 0;
 }
 
@@ -76,8 +76,14 @@ h2 {
   max-width: 20rem;
 }
 
+.experience b {
+  font-weight: 500;
+}
+
 .experience h2 {
   width: 30%;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 .cta {
