@@ -91,6 +91,19 @@ article,
   height: 8rem;
   border-radius: 50%;
   overflow: hidden;
+  position: relative;
+}
+
+.inner-circle {
+  content: "";
+  position: absolute;
+  top: 0.1rem; /* Adjust border thickness */
+  left: 0.1rem;
+  bottom: 0.1rem;
+  right: 0.1rem;
+  border-radius: 50%;
+  border: 0.18rem solid var(--primary-bg-color); /* Define your border thickness and color */
+  z-index: 1; /* Make sure it is above the image */
 }
 
 .hero-pic img,
