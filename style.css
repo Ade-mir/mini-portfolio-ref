@@ -232,7 +232,7 @@ footer {
   color: #575757;
   display: flex;
   justify-content: center;
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 .frontend-skills p {
@@ -242,25 +242,3 @@ footer {
 .backend-skills p {
   background: linear-gradient(to right bottom, #3ec1c9, #0a1e46);
 }
-/* 
-.frontend-skills p {
-  background: linear-gradient(to right bottom, #cbcbcb, #2a5775);
-}
-
-.backend-skills p {
-  background: linear-gradient(to right bottom, #cbcbcb, #2a755a);
-} */
-
-/* .frontend-skills p {
-  color: black;
-  background: linear-gradient(to right bottom, #ffffff, #ffffff);
-}
-
-.backend-skills p {
-  color: black;
-  background: linear-gradient(to right bottom, #ffffff, #ffffff);
-}
-
-.wrapper {
-  background-color: grey;
-} */
